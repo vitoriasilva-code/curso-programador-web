@@ -1,0 +1,13 @@
+.cabecalho{
+    display: flex;
+    background-color: azure;
+    color: cornflowerblue;
+}
+
+.logo_marca{
+    background-color: darkkhaki;
+}
+
+.menu_navegacao{
+    background-color: dimgray;
+}
