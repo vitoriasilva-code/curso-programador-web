@@ -1,0 +1,29 @@
+.Cabecalho{
+    display: flex;
+    background-color: rgb(219, 227, 227);
+    color: rgb(0, 0, 0);
+    
+}
+
+.Conteudo{
+    background-color: rgb(255, 250, 182);
+    h1{
+        color: brown;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    p{
+        color: rgb(122, 122, 130);
+        font-size: medium;
+    }
+}
+
+.Rodape{
+    background-color: rgb(205, 183, 183);
+    font-size: 15px;
+    color: rgb(97, 38, 38);
+}
+
+body{
+    background-color: darkseagreen;
+}
