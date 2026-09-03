@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(158, 173, 247);
+    margin: 0px;
+    padding: 0px;
+}
+
+.Cabecalho {
+    background-color: rgba(248, 115, 248, 0.801);
+    padding: 5px;
+
+}
+
+.Titulo {
+    color: #ffffff;
+    text-align: center;
+    font-family: Arial;
+}
+
+.Menu {
+    ul {
+        justify-content: center;
+        display: flex;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+
+        li {
+            margin: 10px;
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+    }
+}
+
+.Conteiner {
+    max-width: 900px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 25px;
+
+    #sobre {
+        background-color: rgb(130, 81, 177);
+    }
+
+    #sabores {
+        background-color: rgb(255, 0, 0);
+
+        .Grid{
+            display: flex;
+            justify-content: center;
+
+
+            .card{
+                background-color: #ffffff;
+                border-radius: 25px;
+                margin: 3px;
+            }
+        }
+    }
+
+    #contato{
+        background-color: rgb(236, 255, 127);
+    }
+}
+
+
+
+.Rodape {
+    text-align: center;
+    background-color: rgba(248, 115, 248, 0.801);
+    padding: 15px;
+
+}
