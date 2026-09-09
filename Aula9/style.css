@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #fbf9f4;
+    background-color: #98e4f7;
     margin: 0px;
     padding: 0px;
 }
@@ -78,8 +78,25 @@ body {
     #contato{
         background-color:  #fff1e6;
         border-radius: 25px;
+
+        .Formulario{
+        max-width: 350px;
+        margin: 20px auto;
+
+        form{
+            display: flex;
+            flex-direction: column;
+
+            input, label,button {
+                margin-top: 10px;
+            }
+        }
     }
+    }
+
+    
 }
+
 
 
 
