@@ -86,9 +86,32 @@ body {
         form{
             display: flex;
             flex-direction: column;
+            gap: 5px;
 
-            input, label,button {
+            input,textarea {
                 margin-top: 10px;
+                padding: 6px;
+                border: 1px solid #43281c ;
+                border-radius: 5px;
+
+                &focus,
+                &focus{
+                    border-color: #000;
+                    outline: none;
+                }
+
+            }
+
+            button{
+                padding: 10px;
+                background-color: #43281c;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+
+                &:hover{
+                    background-color: #43281c73;
+                }
             }
         }
     }
