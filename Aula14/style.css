@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -7,14 +7,14 @@ body{
     padding: 0px;
 }
 
-header{
+header {
     color: darkblue;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 34px;
 }
 
-main{
+main {
     display: flexbox;
     background-color: cadetblue;
     text-align: center;
@@ -23,11 +23,22 @@ main{
     margin: auto;
 }
 
-footer{
+footer {
     text-align: center;
     background-color: cadetblue;
     color: darkblue;
     padding: 15px;
     margin-top: auto;
+
+}
+
+.botao-clicado {
+    background-color: darkseagreen;
+    border-color: black;
+}
+
+.modo-escuro{
+    background-color: black !important;
+    color: aliceblue !important;
 
 }
