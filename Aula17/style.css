@@ -1,0 +1,64 @@
+body {
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    padding-top: 100px;
+    min-height: 100vh;
+    margin: 0px;
+}
+
+header {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    padding: 20px;
+}
+
+.conteudo {
+    text-align: center;
+    border: 1px solid #080808;
+    background-color: rgba(47, 186, 191, 0.703);
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 10px;
+    padding-top: 40px;
+    width: 350px;
+    box-sizing: border-box;
+
+
+
+    #textoVerificador {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    #campoIdade {
+        border-radius: 5px;
+        border-color: black;
+        border: 1px solid black;
+        padding: 8px;
+
+    }
+
+    button {
+        border-radius: 5px;
+        border-color: black;
+        border: 1px solid black;
+        padding: 8px;
+    }
+}
+
+.Rodape {
+
+    text-align: center;
+    background-color: rgba(47, 186, 191, 0.703);
+    padding: 10px;
+    width: 100%;
+    /* Garante que ocupe toda a largura da tela */
+    box-sizing: border-box;
+    /* Evita que o padding crie barra de rolagem */
+    margin-top: auto;
+    /* Garante o encaixe perfeito no fundo */
+}
