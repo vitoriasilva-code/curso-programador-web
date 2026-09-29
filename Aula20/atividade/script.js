@@ -1,39 +1,34 @@
-const formTemperatura = document.getElementById("formTemperatura");
+function analisarClima() {  
+    const temperatura = document.getElementById("temperatura").value;
+    const temp = parseFloat(temperatura);
+    const output = document.getElementById("output");
+    const imgClima = document.getElementById("imgClima");
 
-if (formTemperatura) { 
-    formTemperatura.addEventListener("submit", function (event) {
-    event.preventDefault();
-        // captura as tag
-        // verificar numero
-            // alterar area resultado
-        
-    const temperatura = (document.getElementById("temperatura").value);
-    const mensagem = document.getElementById("resultadoVisivel");
+    if (temp === "") { 
+        output.innerHTML = "Por favor, insira uma temperatura válida.";
+        return;
+    }
 
-    if (temperatura >= 34){
-        mensagem.textContent = "Quente";
-        mensagem.style.color = "red";
+    if (temp < 0){
+       output.innerHTML = "Clima: Congelante. Na mala: Casaco térmico, luvas e toucal.";
+       imgClima.src = "https://www.shutterstock.com/shutterstock/photos/2807777427/display_1500/stock-vector-cartoon-winter-clothing-set-including-jacket-hat-scarf-gloves-and-boots-perfect-for-seasonal-2807777427.jpg"
+    }
+    else if (temp <= 14){
+        output.innerHTML = "Clima: Frio. Na mala: Leve casacos grossos e calças.";
+        imgClima.src = "https://m.media-amazon.com/images/I/71wGZJmFtTL._AC_SX569_.jpg"
     
     }
 
-    else if (temperatura >= 24){
-        mensagem.textContent = "Agradevel"
-        mensagem.style.color = "green";
-        
-    
-    }
-
-    else if (temperatura >= 14){
-        mensagem.textContent = "frio"
-        mensagem.style.color = "blue";
+     else if (temp <= 25){
+        output.innerHTML = "Clima: Agradavel. Na mala: Roupas leves e um casaco leve para noite.";
+        imgClima.src = "https://cdn-ileapbh.nitrocdn.com/awswdmxduTjCKQiPPVuNWTjlobpOKWLT/assets/images/optimized/rev-05d30b9/aguiarbuenosaires.com/wp-content/uploads/2020/06/O-que-vestir-em-Buenos-Aires.png"
     
     }
 
     else{
-        mensagem.textContent = "Invalido"
-        mensagem.style.color = "gray";
+        output.innerHTML = "Clima: Quente. Na mala: Roupas de banho, óculos de sol e protetor!.";
+        imgClima.src = "https://i.pinimg.com/236x/71/7a/4e/717a4e99a80da3454f1844c66401e6f8.jpg"
     
     }
 
-    })
 };

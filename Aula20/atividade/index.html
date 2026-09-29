@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viagem</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <header id="Titulo">
         <h1>Agência de viagens</h1>
+        <p>Digite a temperatura (°C) do seu destino:</p>
     </header>
 
     <main id="Conteudo">
-        <form action="#" method="post" id="formTemperatura">
-            <label for="temperatura"> Digite a temperatura em grau celsius:</label>
-            <input type="text" id="temperatura" name="temperatura" placeholder="20°" required>
+        <input type="number" id="temperatura" name="temperatura" placeholder="20°">
 
-            <button type="submit">Enviar</button>
-        </form>
-        
-        <p id="resultadoVisivel"></p>
+        <button onclick="analisarClima()">Montar mala</button>
+        <img src="" alt="" id="imgClima">
 
-        <script src="script.js"></script>
+        <p id="output"></p>
+
+
     </main>
+    <script src="script.js"></script>
 </body>
+
 </html>
